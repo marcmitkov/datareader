@@ -1,0 +1,7 @@
+def SplineIT():
+    df1 = pd.read_csv("D:/MyProjects/spline.txt")
+    df1=df1.transpose()
+    print(df1.columns)
+    print(df1)
+    df1.columns=['0','2','6']
+    df1.dropna().plot()
